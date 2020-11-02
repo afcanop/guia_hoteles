@@ -97,7 +97,7 @@
             <a href="productos.html" class="text-white nav-item">Productos</a>
           </li>
         </ul>
-        <button class="btn btn-outline-warning my-2 my-sm-0" type="button">Ingresar
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="button"  data-toggle="modal" data-target="#exampleModal">Ingresar
         </button>
       </div>
     </nav>
@@ -419,6 +419,41 @@
     </div>
   </div>
 </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Formulario de identificación de usuarios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="text-center">
+          <form class="form-signin">
+            <img class="mb-4" src="https://www.flaticon.es/svg/static/icons/svg/3596/3596184.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Por favor, registrese</h1>
+            <div class="mt-2">
+              <label for="inputEmail" class="sr-only">Correo</label>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Correo" required="" autofocus="">
+            </div>
+            <div class="mt-2">
+              <label for="inputPassword" class="sr-only">Contraseña</label>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required="">
+            </div>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Recuérdame
+              </label>
+            </div>
+            <button class="btn btn-lg btn-outline-primary btn-block" type="submit">Registrarse</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
