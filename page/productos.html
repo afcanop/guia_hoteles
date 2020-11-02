@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>productos</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
+  <style>
+      html {
+          overflow-x: hidden;
+      }
+
+      .jumbotron {
+          background-image: url("https://cdn.pixabay.com/photo/2016/06/10/01/03/hotel-1447197_960_720.jpg");
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100vw;
+          height: 100vh;
+      }
+
+      .rebote img {
+          width: 100px;
+          height: 100px;
+          margin-left: 50px;
+          margin-top: 100px;
+          position: relative;
+          -webkit-animation-name: rebote; /* Chrome, Safari, Opera */
+          -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+          -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+          -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+          animation-name: rebote;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-direction: reverse;
+          animation-timing-function: ease-out;
+      }
+
+      .rebote span {
+          background-color: #2F2B2B;
+          display: block;
+          margin-top: -4px;
+          height: 15px;
+          width: 200px;
+      }
+
+      /* Standard syntax */
+      @keyframes rebote {
+          0% {
+              left: 0px;
+              top: 0px;
+          }
+          25% {
+              left: 0px;
+              top: 0px;
+          }
+          50% {
+              left: 0px;
+              top: -100px;
+          }
+          75% {
+              left: 0px;
+              top: -100px;
+          }
+          100% {
+              left: 0px;
+              top: 0px;
+          }
+      }
+
+      @media only screen and (max-width: 990px) {
+          #navbarTogglerDemo01 {
+              background-color: white;
+          }
+      }
+  </style>
+</head>
+<body>
+<section>
+  <div class="jumbotron align-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light  text-white">
+      <a class="navbar-brand text-white" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="text-white nav-item">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="text-white nav-item">Productos</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="button">Ingresar
+        </button>
+      </div>
+    </nav>
+    <div class="d-flex flex-column align-content-center justify-content-between text-center h-100">
+      <h1 class="display-4 text-black mt-2">
+        <mark><b>GUIA DE HOTELES</b></mark>
+      </h1>
+      <p class="lead text-white">
+        <mark>productos</mark>
+      </p>
+      <div class="rebote">
+        <a class="" href="#" role="button">
+          <img src="https://www.flaticon.es/svg/static/icons/svg/892/892499.svg" width="224" height="150"
+               alt="flecha hacia abajo icono gratis" title="flecha hacia abajo icono gratis">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <hr class="featurette-divider">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Productos</li>
+    </ol>
+  </nav>
+  <hr class="featurette-divider">
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">...</div>
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  </div>
+  <table class="table table-hover" style="width:100%">
+    <thead>
+    <tr>
+      <th>ultimo enquilino</th>
+      <th>Recomendada para</th>
+      <th>ciudad</th>
+      <th>Age</th>
+      <th>Fecha publicación</th>
+      <th>Precios</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Tiger Nixon</td>
+      <td>System Architect</td>
+      <td>Edinburgh</td>
+      <td>61</td>
+      <td>2011/04/25</td>
+      <td>$320,800</td>
+    </tr>
+    <tr>
+      <td>Garrett Winters</td>
+      <td>Accountant</td>
+      <td>Tokyo</td>
+      <td>63</td>
+      <td>2011/07/25</td>
+      <td>$170,750</td>
+    </tr>
+    <tr>
+      <td>Ashton Cox</td>
+      <td>Junior Technical Author</td>
+      <td>San Francisco</td>
+      <td>66</td>
+      <td>2009/01/12</td>
+      <td>$86,000</td>
+    </tr>
+    <tr>
+      <td>Cedric Kelly</td>
+      <td>Senior Javascript Developer</td>
+      <td>Edinburgh</td>
+      <td>22</td>
+      <td>2012/03/29</td>
+      <td>$433,060</td>
+    </tr>
+    <tr>
+      <td>Airi Satou</td>
+      <td>Accountant</td>
+      <td>Tokyo</td>
+      <td>33</td>
+      <td>2008/11/28</td>
+      <td>$162,700</td>
+    </tr>
+    <tr>
+      <td>Brielle Williamson</td>
+      <td>Integration Specialist</td>
+      <td>New York</td>
+      <td>61</td>
+      <td>2012/12/02</td>
+      <td>$372,000</td>
+    </tr>
+    <tr>
+      <td>Herrod Chandler</td>
+      <td>Sales Assistant</td>
+      <td>San Francisco</td>
+      <td>59</td>
+      <td>2012/08/06</td>
+      <td>$137,500</td>
+    </tr>
+    <tr>
+      <td>Rhona Davidson</td>
+      <td>Integration Specialist</td>
+      <td>Tokyo</td>
+      <td>55</td>
+      <td>2010/10/14</td>
+      <td>$327,900</td>
+    </tr>
+    <tr>
+      <td>Colleen Hurst</td>
+      <td>Javascript Developer</td>
+      <td>San Francisco</td>
+      <td>39</td>
+      <td>2009/09/15</td>
+      <td>$205,500</td>
+    </tr>
+    <tr>
+      <td>Sonya Frost</td>
+      <td>Software Engineer</td>
+      <td>Edinburgh</td>
+      <td>23</td>
+      <td>2008/12/13</td>
+      <td>$103,600</td>
+    </tr>
+    <tr>
+      <td>Jena Gaines</td>
+      <td>Office Manager</td>
+      <td>London</td>
+      <td>30</td>
+      <td>2008/12/19</td>
+      <td>$90,560</td>
+    </tr>
+    <tr>
+      <td>Quinn Flynn</td>
+      <td>Support Lead</td>
+      <td>Edinburgh</td>
+      <td>22</td>
+      <td>2013/03/03</td>
+      <td>$342,000</td>
+    </tr>
+    <tr>
+      <td>Charde Marshall</td>
+      <td>Regional Director</td>
+      <td>San Francisco</td>
+      <td>36</td>
+      <td>2008/10/16</td>
+      <td>$470,600</td>
+    </tr>
+    <tr>
+      <td>Haley Kennedy</td>
+      <td>Senior Marketing Designer</td>
+      <td>London</td>
+      <td>43</td>
+      <td>2012/12/18</td>
+      <td>$313,500</td>
+    </tr>
+    <tr>
+      <td>Tatyana Fitzpatrick</td>
+      <td>Regional Director</td>
+      <td>London</td>
+      <td>19</td>
+      <td>2010/03/17</td>
+      <td>$385,750</td>
+    </tr>
+    <tr>
+      <td>Michael Silva</td>
+      <td>Marketing Designer</td>
+      <td>London</td>
+      <td>66</td>
+      <td>2012/11/27</td>
+      <td>$198,500</td>
+    </tr>
+    <tr>
+      <td>Paul Byrd</td>
+      <td>Chief Financial Officer (CFO)</td>
+      <td>New York</td>
+      <td>64</td>
+      <td>2010/06/09</td>
+      <td>$725,000</td>
+    </tr>
+    <tr>
+      <td>Gloria Little</td>
+      <td>Systems Administrator</td>
+      <td>New York</td>
+      <td>59</td>
+      <td>2009/04/10</td>
+      <td>$237,500</td>
+    </tr>
+    <tr>
+      <td>Bradley Greer</td>
+      <td>Software Engineer</td>
+      <td>London</td>
+      <td>41</td>
+      <td>2012/10/13</td>
+      <td>$132,000</td>
+    </tr>
+    <tr>
+      <td>Dai Rios</td>
+      <td>Personnel Lead</td>
+      <td>Edinburgh</td>
+      <td>35</td>
+      <td>2012/09/26</td>
+      <td>$217,500</td>
+    </tr>
+    </tbody>
+    </table>
+  <hr class="featurette-divider">
+  <div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action active">
+      Cras justo odio
+    </a>
+    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+    <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at eros</a>
+  </div>
+</section>
+
+
+<footer class="pt-4 mt-5 border-top bg-infoToprimary">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-white">© 2017-2020</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-white" href="#">Cool stuff</a></li>
+        <li><a class="text-white" href="#">Random feature</a></li>
+        <li><a class="text-white" href="#">Team feature</a></li>
+        <li><a class="text-white" href="#">Stuff for developers</a></li>
+        <li><a class="text-white" href="#">Another one</a></li>
+        <li><a class="text-white" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(() => {
+        $('.carousel').carousel({
+            interval: 2000
+        })
+        $('#modalLogin').modal()
+    })
+</script>
+</body>
+
+</html>

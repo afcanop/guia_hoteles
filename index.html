@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia hoteles</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
+  <style>
+      html {
+          overflow-x: hidden;
+      }
+
+      .jumbotron {
+          background-image: url("https://cdn.pixabay.com/photo/2016/06/10/01/03/hotel-1447197_960_720.jpg");
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100vw;
+          height: 100vh;
+      }
+
+      .rebote img {
+          width: 100px;
+          height: 100px;
+          margin-left: 50px;
+          margin-top: 100px;
+          position: relative;
+          -webkit-animation-name: rebote; /* Chrome, Safari, Opera */
+          -webkit-animation-duration: 2s; /* Chrome, Safari, Opera */
+          -webkit-animation-iteration-count: infinite; /* Chrome, Safari, Opera */
+          -webkit-animation-direction: reverse; /* Chrome, Safari, Opera */
+          animation-name: rebote;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-direction: reverse;
+          animation-timing-function: ease-out;
+      }
+
+      .rebote span {
+          background-color: #2F2B2B;
+          display: block;
+          margin-top: -4px;
+          height: 15px;
+          width: 200px;
+      }
+
+      /* Standard syntax */
+      @keyframes rebote {
+          0% {
+              left: 0px;
+              top: 0px;
+          }
+          25% {
+              left: 0px;
+              top: 0px;
+          }
+          50% {
+              left: 0px;
+              top: -100px;
+          }
+          75% {
+              left: 0px;
+              top: -100px;
+          }
+          100% {
+              left: 0px;
+              top: 0px;
+          }
+      }
+
+      @media only screen and (max-width: 990px) {
+          #navbarTogglerDemo01 {
+              background-color: white;
+          }
+      }
+  </style>
+</head>
+<body>
+<section>
+  <div class="jumbotron align-content-center">
+    <nav class="navbar navbar-expand-lg navbar-light  text-white">
+      <a class="navbar-brand text-white" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="index.html" class="text-white nav-item">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a href="productos.html" class="text-white nav-item">Productos</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-warning my-2 my-sm-0" type="button">Ingresar
+        </button>
+      </div>
+    </nav>
+    <div class="d-flex flex-column align-content-center justify-content-between text-center h-100">
+      <h1 class="display-4 text-black mt-2">
+        <mark><b>GUIA DE HOTELES</b></mark>
+      </h1>
+      <p class="lead text-white">
+        <mark>Hospedaje fácil y rápido en pocos pasos</mark>
+      </p>
+      <div class="rebote">
+        <a class="" href="#" role="button">
+          <img src="https://www.flaticon.es/svg/static/icons/svg/892/892499.svg" width="224" height="150"
+               alt="flecha hacia abajo icono gratis" title="flecha hacia abajo icono gratis">
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container">
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading"><span class="oi oi-comment-square"></span> First featurette heading. <span
+        class="text-muted">It’ll blow your mind.</span></h2>
+      <p class="lead text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus arcu vel accumsan convallis. Nam non neque
+        magna. Aenean dignissim hendrerit justo, id mollis libero. Aliquam hendrerit enim a purus euismod facilisis.
+        Nulla lacinia velit neque, porttitor malesuada justo maximus sed. Sed fringilla dui nec consequat consequat.
+        Donec in quam sollicitudin, tristique lacus quis, iaculis sem. Vivamus diam sem, mattis non urna quis, dictum
+        pharetra lorem. Aliquam sit amet rutrum erat. Etiam nec sapien ac tellus feugiat egestas id a odio. Mauris
+        accumsan tortor vel dui rhoncus, non volutpat risus viverra. Nullam metus ante, venenatis nec convallis eget,
+        molestie sed mi. Vestibulum id interdum sapien, a ultricies nunc. Morbi tristique suscipit enim, vel convallis
+        ex molestie eu. Aenean a lectus et libero semper sollicitudin. In hac habitasse platea dictumst.
+      </p>
+    </div>
+    <div class="col-md-5">
+      <img src="https://cdn.pixabay.com/photo/2017/05/23/07/37/hotel-2336469_960_720.jpg" alt="" width="500"
+           height="500" class="img-fluid">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading"><span class="oi oi-comment-square"></span> Oh yeah, it’s that good. <span
+        class="text-muted">See for yourself.</span></h2>
+      <p class="lead text-justify">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus arcu vel accumsan convallis. Nam non neque
+        magna. Aenean dignissim hendrerit justo, id mollis libero. Aliquam hendrerit enim a purus euismod facilisis.
+        Nulla lacinia velit neque, porttitor malesuada justo maximus sed. Sed fringilla dui nec consequat consequat.
+        Donec in quam sollicitudin, tristique lacus quis, iaculis sem. Vivamus diam sem, mattis non urna quis, dictum
+        pharetra lorem. Aliquam sit amet rutrum erat. Etiam nec sapien ac tellus feugiat egestas id a odio. Mauris
+        accumsan tortor vel dui rhoncus, non volutpat risus viverra. Nullam metus ante, venenatis nec convallis eget,
+        molestie sed mi. Vestibulum id interdum sapien, a ultricies nunc. Morbi tristique suscipit enim, vel convallis
+        ex molestie eu. Aenean a lectus et libero semper sollicitudin. In hac habitasse platea dictumst.
+      </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="https://cdn.pixabay.com/photo/2015/09/05/00/27/motel-923495_960_720.jpg" alt="" width="500" height="500"
+           class="img-fluid">
+    </div>
+  </div>
+</section>
+<br>
+<section class="container-fluid table-responsive">
+  <div class="card-columns">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">"Lorem ipsum dolor sit amet, conation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        <a href="#" class="btn btn-outline-primary"><span class="oi oi-book"></span> Leer</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="container mt-5">
+  <div class="row text-center col-12">
+    <h2 id="form-controls"><span class="bd-content-title">¿Te contactamos?<a class="anchorjs-link " aria-label="Anchor"
+                                                                             data-anchorjs-icon="#"
+                                                                             href="#form-controls"
+                                                                             style="padding-left: 0.375em;"></a></span>
+    </h2>
+  </div>
+  <div class="row ">
+    <form class="col-12">
+      <div class="form-group ">
+        <label for="InputNombre">Nombre</label>
+        <input type="email" class="form-control" id="InputNombre" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group ">
+        <label for="InputCorreo">Correo del reservante</label>
+        <input type="email" class="form-control" id="InputCorreo" aria-describedby="emailHelp">
+      </div>
+      <div class="form-group">
+        <label for="InputTelefono" class="col-form-label">Teléfono</label>
+        <input class="form-control" type="tel" id="InputTelefono">
+      </div>
+      <div class="form-group">
+        <label for="InputPersonas">Personas</label>
+        <select class="form-control" id="InputPersonas">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5 ó +</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="InputComentario">Comentario</label>
+        <textarea class="form-control" id="InputComentario" rows="3"></textarea>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="InputTerminoCondidiciones">
+        <label class="form-check-label" for="InputTerminoCondidiciones">Acepto terminos y condiciones</label>
+      </div>
+      <button type="submit" class="btn btn-outline-primary"><span class="oi oi-envelope-closed"></span> Enviar</button>
+    </form>
+  </div>
+</section>
+<footer class="pt-4 mt-5 border-top bg-infoToprimary">
+  <div class="row">
+    <div class="col-12 col-md">
+      <small class="d-block mb-3 text-white">© 2017-2020</small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Features</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-white" href="#">Cool stuff</a></li>
+        <li><a class="text-white" href="#">Random feature</a></li>
+        <li><a class="text-white" href="#">Team feature</a></li>
+        <li><a class="text-white" href="#">Stuff for developers</a></li>
+        <li><a class="text-white" href="#">Another one</a></li>
+        <li><a class="text-white" href="#">Last time</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>Resources</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Resource</a></li>
+        <li><a class="text-muted" href="#">Resource name</a></li>
+        <li><a class="text-muted" href="#">Another resource</a></li>
+        <li><a class="text-muted" href="#">Final resource</a></li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>About</h5>
+      <ul class="list-unstyled text-small">
+        <li><a class="text-muted" href="#">Team</a></li>
+        <li><a class="text-muted" href="#">Locations</a></li>
+        <li><a class="text-muted" href="#">Privacy</a></li>
+        <li><a class="text-muted" href="#">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $(() => {
+        $('.carousel').carousel({
+            interval: 2000
+        })
+        $('#modalLogin').modal()
+    })
+</script>
+</body>
+
+</html>
