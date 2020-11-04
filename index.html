@@ -99,7 +99,7 @@
           </li>
         </ul>
         <button class="btn btn-outline-warning my-2 my-sm-0" type="button" data-toggle="modal"
-                data-target="#exampleModal">Ingresar
+                data-target="#exampleModal" id="btnIngresar">Ingresar
         </button>
       </div>
     </nav>
@@ -394,6 +394,16 @@
 
         $('[data-toggle="tooltip"]').tooltip()
         $('[data-toggle="popover"]').popover()
+
+        $(".modal").on('shown.bs.modal', function (e) {
+            $('#btnIngresar').removeClass('btn-outline-warning');
+            $('#btnIngresar').addClass('btn-outline-info');
+        })
+
+        $(".modal").on('hidden.bs.modal', function (e) {
+            $('#btnIngresar').addClass('btn-outline-warning');
+            $('#btnIngresar').removeClass('btn-outline-info');
+        })
 
     })
 </script>
