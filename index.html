@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Guia hoteles</title>
+  <!-- build:css dist/index.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
 </head>
 <body>
 <section>
@@ -311,31 +313,15 @@
     </div>
   </div>
 </div>
+<!-- Option Javascript--> 
+<!-- jquery first, then popper.js, then Bootstrap, then main JS-->
+<!-- build:js  dist/index.js-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    $(() => {
-        $('.carousel').carousel({
-            interval: 2000
-        })
-        $('#modalLogin').modal()
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
 
-        $('[data-toggle="tooltip"]').tooltip()
-        $('[data-toggle="popover"]').popover()
-
-        $(".modal").on('shown.bs.modal', function (e) {
-            $('#btnIngresar').removeClass('btn-outline-warning');
-            $('#btnIngresar').addClass('btn-outline-info');
-        })
-
-        $(".modal").on('hidden.bs.modal', function (e) {
-            $('#btnIngresar').addClass('btn-outline-warning');
-            $('#btnIngresar').removeClass('btn-outline-info');
-        })
-
-    })
-</script>
 </body>
 
 </html>

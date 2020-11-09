@@ -4,9 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>productos</title>
+  <!-- build:css dist/index.css -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
 </head>
 <body>
 <section>
@@ -384,17 +386,14 @@
     </div>
   </div>
 </div>
+<!-- Option Javascript-->
+<!-- jquery first, then popper.js, then Bootstrap, then main JS-->
+<!-- build:js  dist/index.js-->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    $(() => {
-        $('.carousel').carousel({
-            interval: 2000
-        })
-        $('#modalLogin').modal()
-    })
-</script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- endbuild -->
 </body>
 
 </html>
