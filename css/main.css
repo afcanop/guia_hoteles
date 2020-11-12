@@ -1,8 +1,10 @@
 html {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+}
 
 mark {
-  background-color: #ffc107; }
+  background-color: #ffc107;
+}
 
 .jumbotron {
   background-image: url("https://cdn.pixabay.com/photo/2016/06/10/01/03/hotel-1447197_960_720.jpg");
@@ -12,7 +14,8 @@ mark {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .rebote img {
   width: 100px;
@@ -32,33 +35,43 @@ mark {
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-direction: reverse;
-  animation-timing-function: ease-out; }
+  animation-timing-function: ease-out;
+}
 
 .rebote span {
   background-color: #2f2b2b;
   display: block;
   margin-top: -4px;
   height: 15px;
-  width: 200px; }
+  width: 200px;
+}
 
 /* Standard syntax */
 @keyframes rebote {
   0% {
     left: 0px;
-    top: 0px; }
+    top: 0px;
+  }
   25% {
     left: 0px;
-    top: 0px; }
+    top: 0px;
+  }
   50% {
     left: 0px;
-    top: -100px; }
+    top: -100px;
+  }
   75% {
     left: 0px;
-    top: -100px; }
+    top: -100px;
+  }
   100% {
     left: 0px;
-    top: 0px; } }
+    top: 0px;
+  }
+}
 
 @media only screen and (max-width: 990px) {
   #navbarTogglerDemo01 {
-    background-color: white; } }
+    background-color: white;
+  }
+}
